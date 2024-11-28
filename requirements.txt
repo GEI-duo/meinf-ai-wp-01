@@ -1,4 +1,5 @@
 scikit-learn==1.5.2
 pandas==2.2.3
 seaborn==0.13.2
-ydata_profiling
+ydata_profiling==4.12.0
+ipywidgets==8.1.5
