@@ -1,3 +1,5 @@
+"""No usar todavia, no va"""
+
 import os
 import sys
 import logging
@@ -11,7 +13,7 @@ from datetime import datetime
 from typing import Literal, Union
 
 from sklearn.discriminant_analysis import StandardScaler
-from sklearn.model_selection import train_test_split, cross_validate
+from sklearn.model_selection import ShuffleSplit, train_test_split, cross_validate
 from sklearn.pipeline import Pipeline
 
 from .ttypes import (
@@ -114,8 +116,7 @@ class Trainee:
     def _preprocess(
         self,
         run_path: Path,
-        X: pd.DataFrame,
-        y: pd.Series,
+        df: pd.DataFrame,
         step_idx: int,
         preprocessing: PreprocessingInfo,
     ) -> pd.DataFrame:
@@ -133,23 +134,22 @@ class Trainee:
         """
 
         self.logger.info(
-            "Starting preprocessing step [%s] %s ...", step_idx, preprocessing.name
+            "Starting preprocessing [%s] %s ...",
+            step_idx,
+            preprocessing,
         )
-
-        self.logger.info("X shape: %s, Y shape: %s", X.shape, y.shape)
 
         # Preprocess data
         preprocessing_t0 = self._now()
 
         try:
             df = pd.DataFrame(
-                preprocessing.on(X, y, fit=preprocessing.fit), columns=X.columns
+                preprocessing.on(df, fit=preprocessing.fit), columns=df.columns
             )
         except Exception as e:
             self.logger.error(
-                "Error in preprocessing step [%s] %s: %s",
+                "Error in preprocessing step [%s]: %s",
                 step_idx,
-                preprocessing.name,
                 e,
             )
             return None
@@ -160,15 +160,25 @@ class Trainee:
         self.logger.info(
             "Preprocessing step [%s] %s finished in %ss",
             step_idx,
-            preprocessing.name,
+            preprocessing.names,
             elapsed.seconds,
         )
 
         # Save checkpoint
         df.to_csv(
             Path.joinpath(
-                run_path, self.DATA_OUTPUT_DIR, f"{step_idx}-{preprocessing.name}.csv"
+                run_path,
+                self.DATA_OUTPUT_DIR,
+                f"{step_idx}-{preprocessing}.csv",
             ),
+        )
+
+        dump(
+            preprocessing.pipeline,
+            Path.joinpath(
+                run_path, self.DATA_OUTPUT_DIR, f"{step_idx}-{preprocessing}.bin"
+            ),
+            compress=True,
         )
         return df
 
@@ -196,17 +206,25 @@ class Trainee:
             "Starting training step [%s] %s ...", model_idx, model_data.name
         )
 
-        X_train, X_test, y_train, y_test = train_test_split(
-            data.drop(columns=[model_data.target_column]),
-            data[model_data.target_column],
-            test_size=self.training_info.train_test_split,
-            random_state=self.training_info.random_state,
-        )
-
         training_t0 = self._now()
 
+        scoring = [s.value for s in self.training_info.metrics]
+
         try:
-            trained_model = cross_validate(model_data.model, X_train, y_train, cv=cv)
+            # Shuffle the training and testing data for cross-validation
+            splits = ShuffleSplit(
+                n_splits=cv,
+                test_size=self.training_info.train_test_split,
+                random_state=0,
+            )
+            scores = cross_validate(
+                model_data.model,
+                data.drop(columns=[self.training_info.target_column]),
+                data[self.training_info.target_column],
+                cv=splits,
+                scoring=scoring,
+                return_train_score=True,
+            )
         except Exception as e:
             self.logger.error("Error training model %s: %s", model_data.name, e)
             return
@@ -215,7 +233,7 @@ class Trainee:
         elapsed = training_t1 - training_t0
 
         self.logger.info(
-            "Training step [%s] %s finished in %ss",
+            "Cross-validation step [%s] %s finished in %ss",
             model_idx,
             model_data.name,
             elapsed.seconds,
@@ -227,7 +245,9 @@ class Trainee:
             f"{model_data.name}.bin",
         )
 
-        dump(trained_model, model_path, compress=True)
+        dump(model_data.model, model_path, compress=True)
+
+        print(scores)
 
         # Track file size
         bytes_size = os.path.getsize(model_path)
@@ -293,9 +313,6 @@ class Trainee:
         # TODO: Define needed columns for the results
         results = pd.DataFrame(columns=["Model Name", "Training Time", "File Size"])
 
-        X = run_data.data.drop(columns=[run_data.target_column])
-        y = run_data.data[run_data.target_column]
-
         for preprocessing_idx, preprocessing in enumerate(
             run_data.preprocessing_info,
             start=1,
@@ -303,8 +320,7 @@ class Trainee:
 
             preprocessed_df = self._preprocess(
                 run_path,
-                X,
-                y,
+                run_data.data,
                 preprocessing_idx,
                 preprocessing,
             )

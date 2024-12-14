@@ -67,23 +67,24 @@ class StatisticsInfo:
 class PreprocessingInfo:
     """Dataframe preprocessing information for training the models."""
 
-    acronym: str
-    """Acronym of the preprocessing step to display, should be unique and friendly with your OS file system"""
+    acronyms: List[str]
+    """Acronyms of the preprocessing steps to display, should be unique and friendly with your OS file system"""
 
-    name: str
-    """Name of the preprocessing step to display, should be unique and friendly with your OS file system"""
+    names: List[str]
+    """Names of the preprocessing steps to display, should be unique and friendly with your OS file system"""
 
     pipeline: Pipeline
     """Preprocessing pipeline to apply to the data"""
 
     fit: bool = False
-    """Whether to fit the preprocessing step to the data"""
+    """Whether to fit the preprocessing steps to the data"""
 
-    def on(self, X: pd.DataFrame, y: pd.Series, fit: bool = False):
+    def on(self, df: pd.DataFrame, fit: bool = False):
         """Apply the preprocessing step to the data"""
-        return (
-            self.pipeline.fit_transform(X, y) if fit else self.pipeline.transform(X, y)
-        )
+        return self.pipeline.fit_transform(df) if fit else self.pipeline.transform(df)
+
+    def __str__(self):
+        return "-".join(self.acronyms)
 
 
 @dataclass(frozen=True)

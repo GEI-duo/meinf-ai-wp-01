@@ -1,0 +1,78 @@
+22:24:37 - INFO - (1.000000/0.000000) Finished training linearregression in 0
+22:24:38 - INFO - (2.000000/0.000000) Finished training lasso in 0
+22:25:05 - INFO - ( 1/ 0) Finished training linearregression in 0
+22:25:05 - INFO - ( 2/ 0) Finished training lasso in 0
+22:25:13 - INFO - (01/00) Finished training linearregression in 0
+22:25:13 - INFO - (02/00) Finished training lasso in 0
+22:25:53 - INFO - (01/02) Finished training linearregression in 0
+22:25:53 - INFO - (02/02) Finished training lasso in 0
+22:26:06 - INFO - (01/02) Finished training linearregression in 0
+22:26:07 - INFO - (02/02) Finished training lasso in 0
+22:27:22 - INFO - (01/16) Finished training linearregression in 0
+22:27:22 - INFO - (02/16) Finished training lasso in 0
+22:27:22 - INFO - (03/16) Finished training ridge in 0
+22:27:22 - INFO - (04/16) Finished training decisiontreeregressor in 0
+22:27:22 - INFO - (05/16) Finished training randomforestregressor in 0
+22:27:22 - INFO - (06/16) Finished training gradientboostingregressor in 0
+22:27:22 - INFO - (07/16) Finished training svr in 0
+22:27:22 - INFO - (08/16) Finished training mlpregressor in 0
+22:30:04 - INFO - (01/08) Finished training linearregression in 0
+22:30:04 - INFO - (02/08) Finished training lasso in 0
+22:30:04 - INFO - (03/08) Finished training ridge in 0
+22:30:04 - INFO - (04/08) Finished training decisiontreeregressor in 0
+22:30:05 - INFO - (05/08) Finished training randomforestregressor in 0
+22:30:05 - INFO - (06/08) Finished training gradientboostingregressor in 0
+22:30:05 - INFO - (07/08) Finished training svr in 0
+22:30:06 - INFO - (08/08) Finished training mlpregressor in 0
+22:30:37 - INFO - (01/08) Finished training linearregression in 0
+22:30:37 - INFO - (02/08) Finished training lasso in 0
+22:30:37 - INFO - (03/08) Finished training ridge in 0
+22:30:37 - INFO - (04/08) Finished training decisiontreeregressor in 0
+22:30:38 - INFO - (05/08) Finished training randomforestregressor in 0
+22:30:38 - INFO - (06/08) Finished training gradientboostingregressor in 0
+22:30:38 - INFO - (07/08) Finished training svr in 0
+22:30:38 - INFO - (08/08) Finished training mlpregressor in 0
+22:30:54 - INFO - (01/08) Finished training linearregression in 0
+22:30:54 - INFO - (02/08) Finished training lasso in 0
+22:30:54 - INFO - (03/08) Finished training ridge in 0
+22:30:54 - INFO - (04/08) Finished training decisiontreeregressor in 0
+22:30:55 - INFO - (05/08) Finished training randomforestregressor in 0
+22:30:55 - INFO - (06/08) Finished training gradientboostingregressor in 0
+22:30:55 - INFO - (07/08) Finished training svr in 0
+22:30:56 - INFO - (08/08) Finished training mlpregressor in 0
+22:35:38 - INFO - Calculating R2 Score for each model
+22:35:38 - INFO - linearregression R2 Score: 0.9802675995368527
+22:35:38 - INFO - lasso R2 Score: 0.980297089067681
+22:35:38 - INFO - ridge R2 Score: 0.9801988816370579
+22:35:38 - INFO - decisiontreeregressor R2 Score: 0.9469980722749368
+22:35:38 - INFO - randomforestregressor R2 Score: 0.971777323431203
+22:35:38 - INFO - gradientboostingregressor R2 Score: 0.9942168837021715
+22:35:38 - INFO - svr R2 Score: 0.13393774567823458
+22:35:38 - INFO - mlpregressor R2 Score: -3.8697551084677224
+22:35:38 - INFO - Calculating RMSE for each model
+22:35:38 - INFO - linearregression RMSE: 40.573094713085986
+22:35:38 - INFO - lasso RMSE: 40.54276568922698
+22:35:38 - INFO - ridge RMSE: 40.64368102361582
+22:35:38 - INFO - decisiontreeregressor RMSE: 66.49576813216898
+22:35:38 - INFO - randomforestregressor RMSE: 48.5229586526858
+22:35:38 - INFO - gradientboostingregressor RMSE: 21.964895297528145
+22:35:38 - INFO - svr RMSE: 268.79595564948096
+22:35:38 - INFO - mlpregressor RMSE: 637.3848482584406
+22:37:54 - INFO - Calculating R2 Score for each model
+22:37:54 - INFO - linearregression R2 Score: 0.9802675995368527
+22:37:54 - INFO - lasso R2 Score: 0.980297089067681
+22:37:54 - INFO - ridge R2 Score: 0.9801988816370579
+22:37:54 - INFO - decisiontreeregressor R2 Score: 0.9469980722749368
+22:37:54 - INFO - randomforestregressor R2 Score: 0.971777323431203
+22:37:54 - INFO - gradientboostingregressor R2 Score: 0.9942168837021715
+22:37:54 - INFO - svr R2 Score: 0.13393774567823458
+22:37:54 - INFO - mlpregressor R2 Score: -3.8697551084677224
+22:37:54 - INFO - Calculating RMSE for each model
+22:37:54 - INFO - linearregression RMSE: 40.573094713085986
+22:37:54 - INFO - lasso RMSE: 40.54276568922698
+22:37:54 - INFO - ridge RMSE: 40.64368102361582
+22:37:54 - INFO - decisiontreeregressor RMSE: 66.49576813216898
+22:37:54 - INFO - randomforestregressor RMSE: 48.5229586526858
+22:37:54 - INFO - gradientboostingregressor RMSE: 21.964895297528145
+22:37:54 - INFO - svr RMSE: 268.79595564948096
+22:37:54 - INFO - mlpregressor RMSE: 637.3848482584406
