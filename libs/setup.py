@@ -144,7 +144,7 @@ class Run:
         Returns: The path to the model in the run directory.
         """
         model_path = Path.joinpath(self.paths.models, filename)
-        dump(model_path)
+        dump(model, model_path, compress=True)
         self.logger.info(f"Model saved to {model_path}")
         return model_path
 
