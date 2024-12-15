@@ -1,0 +1,247 @@
+22:54:03 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-54-03/data/raw/gym_members_exercise_tracking.csv
+22:54:18 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-54-03/data/processed/ExtraTreesRegressor_selected_features.csv
+22:54:18 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-54-03/data/processed/Lasso_selected_features.csv
+22:54:18 - INFO - (778, 3), (778,)
+22:54:18 - INFO - (195, 3), (195,)
+22:54:18 - INFO - (778, 14), (778,)
+22:54:18 - INFO - (195, 14), (195,)
+22:55:47 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/data/raw/gym_members_exercise_tracking.csv
+22:56:02 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/data/processed/ExtraTreesRegressor_selected_features.csv
+22:56:02 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/data/processed/Lasso_selected_features.csv
+22:56:02 - INFO - (778, 3), (778,)
+22:56:02 - INFO - (195, 3), (195,)
+22:56:02 - INFO - (778, 14), (778,)
+22:56:02 - INFO - (195, 14), (195,)
+22:56:02 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/linearregression
+22:56:02 - INFO - (01/08) Finished training linearregression in 0
+22:56:02 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/lasso
+22:56:02 - INFO - (02/08) Finished training lasso in 0
+22:56:02 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/ridge
+22:56:02 - INFO - (03/08) Finished training ridge in 0
+22:56:02 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/decisiontreeregressor
+22:56:02 - INFO - (04/08) Finished training decisiontreeregressor in 0
+22:56:02 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/randomforestregressor
+22:56:03 - INFO - (05/08) Finished training randomforestregressor in 0
+22:56:03 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/gradientboostingregressor
+22:56:03 - INFO - (06/08) Finished training gradientboostingregressor in 0
+22:56:03 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/svr
+22:56:03 - INFO - (07/08) Finished training svr in 0
+22:56:04 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/mlpregressor
+22:56:04 - INFO - (08/08) Finished training mlpregressor in 1
+22:56:04 - INFO - Calculating R2 Score for each model
+22:56:04 - INFO - linearregression R2 Score: 0.9343634083966177
+22:56:04 - INFO - lasso R2 Score: 0.9340232330573616
+22:56:04 - INFO - ridge R2 Score: 0.9342305708621611
+22:56:04 - INFO - decisiontreeregressor R2 Score: 0.900995550741707
+22:56:04 - INFO - randomforestregressor R2 Score: 0.9321518220149043
+22:56:04 - INFO - gradientboostingregressor R2 Score: 0.9379645288459657
+22:56:04 - INFO - svr R2 Score: 0.38791736432086243
+22:56:04 - INFO - mlpregressor R2 Score: -6.496262147483346
+22:56:04 - INFO - Calculating RMSE for each model
+22:56:04 - INFO - linearregression RMSE: 73.99820496134821
+22:56:04 - INFO - lasso RMSE: 74.18971272286734
+22:56:04 - INFO - ridge RMSE: 74.07304713740236
+22:56:04 - INFO - decisiontreeregressor RMSE: 90.8815092191405
+22:56:04 - INFO - randomforestregressor RMSE: 75.23453986104704
+22:56:04 - INFO - gradientboostingregressor RMSE: 71.93963282974424
+22:56:05 - INFO - svr RMSE: 225.97125829617934
+22:56:05 - INFO - mlpregressor RMSE: 790.8070952297078
+22:56:05 - INFO - Models trained successfully
+22:56:05 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
+22:56:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/linearregression
+22:56:05 - INFO - (01/08) Finished training linearregression in 0
+22:56:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/lasso
+22:56:05 - INFO - (02/08) Finished training lasso in 0
+22:56:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/ridge
+22:56:05 - INFO - (03/08) Finished training ridge in 0
+22:56:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/decisiontreeregressor
+22:56:05 - INFO - (04/08) Finished training decisiontreeregressor in 0
+22:56:06 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/randomforestregressor
+22:56:06 - INFO - (05/08) Finished training randomforestregressor in 0
+22:56:06 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/gradientboostingregressor
+22:56:06 - INFO - (06/08) Finished training gradientboostingregressor in 0
+22:56:06 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/svr
+22:56:06 - INFO - (07/08) Finished training svr in 0
+22:56:08 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_22-55-47/models/mlpregressor
+22:56:08 - INFO - (08/08) Finished training mlpregressor in 1
+22:56:08 - INFO - Calculating R2 Score for each model
+22:56:08 - INFO - linearregression R2 Score: 0.9801142303802646
+22:56:08 - INFO - lasso R2 Score: 0.9803270040088563
+22:56:08 - INFO - ridge R2 Score: 0.9800728229078028
+22:56:08 - INFO - decisiontreeregressor R2 Score: 0.9426951145447348
+22:56:08 - INFO - randomforestregressor R2 Score: 0.9725535394224694
+22:56:08 - INFO - gradientboostingregressor R2 Score: 0.9943847511338254
+22:56:08 - INFO - svr R2 Score: 0.1617302389017775
+22:56:08 - INFO - mlpregressor R2 Score: -4.307990316580081
+22:56:08 - INFO - Calculating RMSE for each model
+22:56:08 - INFO - linearregression RMSE: 40.730465752529255
+22:56:08 - INFO - lasso RMSE: 40.51197594535422
+22:56:08 - INFO - ridge RMSE: 40.77284954316795
+22:56:08 - INFO - decisiontreeregressor RMSE: 69.14232812439525
+22:56:08 - INFO - randomforestregressor RMSE: 47.85103632562097
+22:56:08 - INFO - gradientboostingregressor RMSE: 21.643758468467524
+22:56:08 - INFO - svr RMSE: 264.4478706923458
+22:56:08 - INFO - mlpregressor RMSE: 665.446638178456
+22:56:09 - INFO - Models trained successfully
+22:56:09 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
+23:01:29 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-29/data/raw/gym_members_exercise_tracking.csv
+23:01:30 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-30/data/raw/gym_members_exercise_tracking.csv
+23:01:31 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-31/data/raw/gym_members_exercise_tracking.csv
+23:01:33 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/data/raw/gym_members_exercise_tracking.csv
+23:11:01 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/data/processed/ExtraTreesRegressor_selected_features.csv
+23:11:01 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/data/processed/Lasso_selected_features.csv
+23:11:13 - INFO - (599, 2), (599,)
+23:11:13 - INFO - (150, 2), (150,)
+23:11:13 - INFO - (599, 5), (599,)
+23:11:13 - INFO - (150, 5), (150,)
+23:11:14 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/linearregression
+23:11:15 - INFO - (01/08) Finished training linearregression in 0
+23:11:15 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/lasso
+23:11:15 - INFO - (02/08) Finished training lasso in 0
+23:11:15 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/ridge
+23:11:15 - INFO - (03/08) Finished training ridge in 0
+23:11:15 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/decisiontreeregressor
+23:11:15 - INFO - (04/08) Finished training decisiontreeregressor in 0
+23:11:15 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/randomforestregressor
+23:11:15 - INFO - (05/08) Finished training randomforestregressor in 0
+23:11:16 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/gradientboostingregressor
+23:11:16 - INFO - (06/08) Finished training gradientboostingregressor in 0
+23:11:16 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/svr
+23:11:16 - INFO - (07/08) Finished training svr in 0
+23:11:16 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/mlpregressor
+23:11:16 - INFO - (08/08) Finished training mlpregressor in 0
+23:11:16 - INFO - Calculating R2 Score for each model
+23:11:16 - INFO - linearregression R2 Score: 0.9206332844797078
+23:11:16 - INFO - lasso R2 Score: -0.003783318803398883
+23:11:16 - INFO - ridge R2 Score: 0.9206800792849191
+23:11:16 - INFO - decisiontreeregressor R2 Score: 0.862838479010372
+23:11:16 - INFO - randomforestregressor R2 Score: 0.9108566079037885
+23:11:16 - INFO - gradientboostingregressor R2 Score: 0.9195584915744406
+23:11:16 - INFO - svr R2 Score: 0.9273896527937948
+23:11:16 - INFO - mlpregressor R2 Score: 0.9277335301465459
+23:11:16 - INFO - Calculating RMSE for each model
+23:11:16 - INFO - linearregression RMSE: 0.2891719684841694
+23:11:16 - INFO - lasso RMSE: 1.0283879387302877
+23:11:16 - INFO - ridge RMSE: 0.28908670767285366
+23:11:17 - INFO - decisiontreeregressor RMSE: 0.38014837079092434
+23:11:17 - INFO - randomforestregressor RMSE: 0.30646548159304604
+23:11:17 - INFO - gradientboostingregressor RMSE: 0.291123383639915
+23:11:17 - INFO - svr RMSE: 0.2765898533845571
+23:11:17 - INFO - mlpregressor RMSE: 0.27593412131775685
+23:11:17 - INFO - Models trained successfully
+23:11:17 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
+23:11:17 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/linearregression
+23:11:17 - INFO - (01/08) Finished training linearregression in 0
+23:11:17 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/lasso
+23:11:17 - INFO - (02/08) Finished training lasso in 0
+23:11:17 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/ridge
+23:11:17 - INFO - (03/08) Finished training ridge in 0
+23:11:17 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/decisiontreeregressor
+23:11:17 - INFO - (04/08) Finished training decisiontreeregressor in 0
+23:11:17 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/randomforestregressor
+23:11:18 - INFO - (05/08) Finished training randomforestregressor in 0
+23:11:18 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/gradientboostingregressor
+23:11:18 - INFO - (06/08) Finished training gradientboostingregressor in 0
+23:11:18 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/svr
+23:11:18 - INFO - (07/08) Finished training svr in 0
+23:11:19 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-01-33/models/mlpregressor
+23:11:19 - INFO - (08/08) Finished training mlpregressor in 0
+23:11:19 - INFO - Calculating R2 Score for each model
+23:11:19 - INFO - linearregression R2 Score: 0.9673043788326005
+23:11:19 - INFO - lasso R2 Score: -0.003783318803398883
+23:11:19 - INFO - ridge R2 Score: 0.967300716898529
+23:11:19 - INFO - decisiontreeregressor R2 Score: 0.9248277734880336
+23:11:19 - INFO - randomforestregressor R2 Score: 0.9685123167304259
+23:11:19 - INFO - gradientboostingregressor R2 Score: 0.9808657570757244
+23:11:19 - INFO - svr R2 Score: 0.9658990681911359
+23:11:19 - INFO - mlpregressor R2 Score: 0.9713751814479021
+23:11:19 - INFO - Calculating RMSE for each model
+23:11:19 - INFO - linearregression RMSE: 0.18560162903796978
+23:11:19 - INFO - lasso RMSE: 1.0283879387302877
+23:11:19 - INFO - ridge RMSE: 0.18561202250772565
+23:11:19 - INFO - decisiontreeregressor RMSE: 0.2814269566408707
+23:11:19 - INFO - randomforestregressor RMSE: 0.1821408426732733
+23:11:19 - INFO - gradientboostingregressor RMSE: 0.1419850533806214
+23:11:19 - INFO - svr RMSE: 0.18954839461283504
+23:11:19 - INFO - mlpregressor RMSE: 0.1736634236564989
+23:11:19 - INFO - Models trained successfully
+23:11:19 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
+23:13:49 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/data/raw/gym_members_exercise_tracking.csv
+23:14:04 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/data/processed/ExtraTreesRegressor_selected_features.csv
+23:14:04 - INFO - Data saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/data/processed/Lasso_selected_features.csv
+23:14:05 - INFO - (599, 2), (599,)
+23:14:05 - INFO - (150, 2), (150,)
+23:14:05 - INFO - (599, 5), (599,)
+23:14:05 - INFO - (150, 5), (150,)
+23:14:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/linearregression
+23:14:05 - INFO - (01/08) Finished training linearregression in 0
+23:14:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/lasso
+23:14:05 - INFO - (02/08) Finished training lasso in 0
+23:14:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/ridge
+23:14:05 - INFO - (03/08) Finished training ridge in 0
+23:14:05 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/decisiontreeregressor
+23:14:05 - INFO - (04/08) Finished training decisiontreeregressor in 0
+23:14:06 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/randomforestregressor
+23:14:06 - INFO - (05/08) Finished training randomforestregressor in 0
+23:14:06 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/gradientboostingregressor
+23:14:06 - INFO - (06/08) Finished training gradientboostingregressor in 0
+23:14:06 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/svr
+23:14:06 - INFO - (07/08) Finished training svr in 0
+23:14:07 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/mlpregressor
+23:14:07 - INFO - (08/08) Finished training mlpregressor in 0
+23:14:07 - INFO - Calculating R2 Score for each model
+23:14:07 - INFO - linearregression R2 Score: 0.9206332844797078
+23:14:07 - INFO - lasso R2 Score: -0.003783318803398883
+23:14:07 - INFO - ridge R2 Score: 0.9206800792849192
+23:14:07 - INFO - decisiontreeregressor R2 Score: 0.8607171199895632
+23:14:07 - INFO - randomforestregressor R2 Score: 0.9091993524885764
+23:14:07 - INFO - gradientboostingregressor R2 Score: 0.9195584915744406
+23:14:07 - INFO - svr R2 Score: 0.9273896527937947
+23:14:08 - INFO - mlpregressor R2 Score: 0.9269619938044613
+23:14:08 - INFO - Calculating RMSE for each model
+23:14:08 - INFO - linearregression RMSE: 0.2891719684841694
+23:14:08 - INFO - lasso RMSE: 1.0283879387302877
+23:14:08 - INFO - ridge RMSE: 0.2890867076728536
+23:14:08 - INFO - decisiontreeregressor RMSE: 0.3830768049381363
+23:14:08 - INFO - randomforestregressor RMSE: 0.30930109687497126
+23:14:08 - INFO - gradientboostingregressor RMSE: 0.291123383639915
+23:14:08 - INFO - svr RMSE: 0.2765898533845573
+23:14:08 - INFO - mlpregressor RMSE: 0.2774031842863834
+23:14:08 - INFO - Models trained successfully
+23:14:08 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
+23:14:08 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/linearregression
+23:14:08 - INFO - (01/08) Finished training linearregression in 0
+23:14:08 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/lasso
+23:14:08 - INFO - (02/08) Finished training lasso in 0
+23:14:08 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/ridge
+23:14:08 - INFO - (03/08) Finished training ridge in 0
+23:14:08 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/decisiontreeregressor
+23:14:08 - INFO - (04/08) Finished training decisiontreeregressor in 0
+23:14:09 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/randomforestregressor
+23:14:09 - INFO - (05/08) Finished training randomforestregressor in 0
+23:14:09 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/gradientboostingregressor
+23:14:09 - INFO - (06/08) Finished training gradientboostingregressor in 0
+23:14:09 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/svr
+23:14:09 - INFO - (07/08) Finished training svr in 0
+23:14:10 - INFO - Model saved to /mnt/40EE82D1EE82BF22/Users/jordi/Documents/GitHub/meinf-ai-wp-01/runs/2024-12-15_23-13-49/models/mlpregressor
+23:14:10 - INFO - (08/08) Finished training mlpregressor in 0
+23:14:10 - INFO - Calculating R2 Score for each model
+23:14:10 - INFO - linearregression R2 Score: 0.9673043788326005
+23:14:10 - INFO - lasso R2 Score: -0.003783318803398883
+23:14:10 - INFO - ridge R2 Score: 0.967300716898529
+23:14:10 - INFO - decisiontreeregressor R2 Score: 0.9242484536632933
+23:14:10 - INFO - randomforestregressor R2 Score: 0.9698670262712537
+23:14:10 - INFO - gradientboostingregressor R2 Score: 0.9808117908430608
+23:14:10 - INFO - svr R2 Score: 0.9659002998488506
+23:14:10 - INFO - mlpregressor R2 Score: 0.9714696874394992
+23:14:10 - INFO - Calculating RMSE for each model
+23:14:10 - INFO - linearregression RMSE: 0.18560162903796973
+23:14:10 - INFO - lasso RMSE: 1.0283879387302877
+23:14:10 - INFO - ridge RMSE: 0.18561202250772565
+23:14:10 - INFO - decisiontreeregressor RMSE: 0.2825092932625334
+23:14:10 - INFO - randomforestregressor RMSE: 0.17817960172593236
+23:14:10 - INFO - gradientboostingregressor RMSE: 0.14218513977293
+23:14:10 - INFO - svr RMSE: 0.1895449715267461
+23:14:10 - INFO - mlpregressor RMSE: 0.17337650825041234
+23:14:11 - INFO - Models trained successfully
+23:14:11 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
