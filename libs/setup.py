@@ -3,6 +3,7 @@ import logging
 import pytz
 import pandas as pd
 
+from joblib import dump
 from pathlib import Path
 from datetime import datetime
 from dataclasses import dataclass
@@ -38,7 +39,7 @@ class RunPaths:
 
 class Run:
 
-    RUN_TIMESTAMP_FORMAT = "%Y-%m-%d %H-%M-%S"
+    RUN_TIMESTAMP_FORMAT = "%Y-%m-%d_%H-%M-%S"
     LOG_TIMESTAMP_FORMAT = "%H:%M:%S"
     LOGS_FILENAME = "training"
     MODELS_OUTPUT_DIR = "models"
@@ -95,18 +96,57 @@ class Run:
         self._paths = self._setup_run(verbosity)
         return self
 
-    def add_raw(self, raw_data: pd.DataFrame, filename: str) -> Path:
+    def add_data(self, data: pd.DataFrame, filename: str, path: Path) -> Path:
+        """Adds the data to the run directory.
+
+        Args:
+            data (pd.DataFrame): The data to save.
+            filename (str): The filename to use for the data (without extension).
+            path (Path): The path to save the data.
+
+        Returns: The path to the data in the run directory.
+        """
+        data_path = Path.joinpath(path, f"{filename}.csv")
+        data.to_csv(data_path)
+        self.logger.info(f"Data saved to {data_path}")
+        return data_path
+
+    def add_raw(self, data: pd.DataFrame, filename: str) -> Path:
         """Adds the raw data to the run directory.
 
         Args:
-            raw_data (pd.DataFrame): The raw data to save.
+            data (pd.DataFrame): The raw data to save.
             filename (str): The filename to use for the raw data (without extension).
 
         Returns: The path to the raw data in the run directory.
         """
-        raw_data_path = Path.joinpath(self.paths.raw_data, filename)
-        raw_data.to_csv(f"{raw_data_path}.csv")
-        return raw_data_path
+        return self.add_data(data, filename, self.paths.raw_data)
+
+    def add_processed(self, data: pd.DataFrame, filename: str) -> Path:
+        """Adds the processed data to the run directory.
+
+        Args:
+            data (pd.DataFrame): The processed data to save.
+            filename (str): The filename to use for the processed data (without extension).
+
+        Returns:
+            Path: The path to the processed data in the run directory.
+        """
+        return self.add_data(data, filename, self.paths.processed_data)
+
+    def add_model(self, model, filename: str) -> Path:
+        """Adds the model to the run directory.
+
+        Args:
+            model: The model to save.
+            filename (str): The filename to use for the model (without extension).
+
+        Returns: The path to the model in the run directory.
+        """
+        model_path = Path.joinpath(self.paths.models, filename)
+        dump(model_path)
+        self.logger.info(f"Model saved to {model_path}")
+        return model_path
 
     def _init_logger(
         self,

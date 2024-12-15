@@ -1,9 +1,0 @@
-,Model Name,Training Time,File Size
-linearregression,linearregression,0,1.7 kB
-lasso,lasso,0,1.6 kB
-ridge,ridge,0,1.6 kB
-decisiontreeregressor,decisiontreeregressor,0,20.5 kB
-randomforestregressor,randomforestregressor,0,1.4 MB
-gradientboostingregressor,gradientboostingregressor,0,63.9 kB
-svr,svr,0,36.9 kB
-mlpregressor,mlpregressor,0,53.0 kB
