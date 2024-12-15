@@ -1,1 +1,79 @@
 23:39:16 - INFO - Data saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\data\raw\gym_members_exercise_tracking.csv
+23:39:36 - INFO - Data saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\data\processed\ExtraTreesRegressor_selected_features.csv
+23:39:36 - INFO - Data saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\data\processed\Lasso_selected_features.csv
+23:39:36 - INFO - (599, 2), (599,)
+23:39:36 - INFO - (150, 2), (150,)
+23:39:36 - INFO - (599, 5), (599,)
+23:39:36 - INFO - (150, 5), (150,)
+23:39:36 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\linearregression
+23:39:36 - INFO - (01/08) Finished training linearregression in 0
+23:39:36 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\lasso
+23:39:36 - INFO - (02/08) Finished training lasso in 0
+23:39:36 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\ridge
+23:39:36 - INFO - (03/08) Finished training ridge in 0
+23:39:36 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\decisiontreeregressor
+23:39:36 - INFO - (04/08) Finished training decisiontreeregressor in 0
+23:39:36 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\randomforestregressor
+23:39:36 - INFO - (05/08) Finished training randomforestregressor in 0
+23:39:37 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\gradientboostingregressor
+23:39:37 - INFO - (06/08) Finished training gradientboostingregressor in 0
+23:39:37 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\svr
+23:39:37 - INFO - (07/08) Finished training svr in 0
+23:39:37 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\mlpregressor
+23:39:37 - INFO - (08/08) Finished training mlpregressor in 0
+23:39:37 - INFO - Calculating R2 Score for each model
+23:39:37 - INFO - linearregression R2 Score: 0.9206332844797078
+23:39:37 - INFO - lasso R2 Score: -0.003783318803398883
+23:39:37 - INFO - ridge R2 Score: 0.9206800792849192
+23:39:37 - INFO - decisiontreeregressor R2 Score: 0.8593065828396014
+23:39:37 - INFO - randomforestregressor R2 Score: 0.9089581984531848
+23:39:37 - INFO - gradientboostingregressor R2 Score: 0.9195584915744406
+23:39:37 - INFO - svr R2 Score: 0.9273896527937948
+23:39:37 - INFO - mlpregressor R2 Score: 0.9238452940763583
+23:39:37 - INFO - Calculating RMSE for each model
+23:39:37 - INFO - linearregression RMSE: 0.2891719684841694
+23:39:37 - INFO - lasso RMSE: 1.0283879387302877
+23:39:37 - INFO - ridge RMSE: 0.2890867076728536
+23:39:37 - INFO - decisiontreeregressor RMSE: 0.38501165476782345
+23:39:37 - INFO - randomforestregressor RMSE: 0.3097115551188922
+23:39:37 - INFO - gradientboostingregressor RMSE: 0.291123383639915
+23:39:37 - INFO - svr RMSE: 0.27658985338455727
+23:39:37 - INFO - mlpregressor RMSE: 0.283260071264001
+23:39:37 - INFO - Models trained successfully
+23:39:37 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
+23:39:37 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\linearregression
+23:39:37 - INFO - (01/08) Finished training linearregression in 0
+23:39:37 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\lasso
+23:39:37 - INFO - (02/08) Finished training lasso in 0
+23:39:37 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\ridge
+23:39:37 - INFO - (03/08) Finished training ridge in 0
+23:39:37 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\decisiontreeregressor
+23:39:37 - INFO - (04/08) Finished training decisiontreeregressor in 0
+23:39:38 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\randomforestregressor
+23:39:38 - INFO - (05/08) Finished training randomforestregressor in 0
+23:39:38 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\gradientboostingregressor
+23:39:38 - INFO - (06/08) Finished training gradientboostingregressor in 0
+23:39:38 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\svr
+23:39:38 - INFO - (07/08) Finished training svr in 0
+23:39:38 - INFO - Model saved to c:\Users\drwni\Desktop\MEINF\AI\WP_01\runs\2024-12-15_23-39-16\models\mlpregressor
+23:39:38 - INFO - (08/08) Finished training mlpregressor in 0
+23:39:38 - INFO - Calculating R2 Score for each model
+23:39:38 - INFO - linearregression R2 Score: 0.9673043788326005
+23:39:38 - INFO - lasso R2 Score: -0.003783318803398883
+23:39:38 - INFO - ridge R2 Score: 0.967300716898529
+23:39:38 - INFO - decisiontreeregressor R2 Score: 0.924462588751886
+23:39:38 - INFO - randomforestregressor R2 Score: 0.9675366155156089
+23:39:38 - INFO - gradientboostingregressor R2 Score: 0.9806769698419123
+23:39:38 - INFO - svr R2 Score: 0.9659002998488506
+23:39:38 - INFO - mlpregressor R2 Score: 0.9706672133204816
+23:39:38 - INFO - Calculating RMSE for each model
+23:39:38 - INFO - linearregression RMSE: 0.1856016290379697
+23:39:38 - INFO - lasso RMSE: 1.0283879387302877
+23:39:38 - INFO - ridge RMSE: 0.18561202250772565
+23:39:38 - INFO - decisiontreeregressor RMSE: 0.2821097108906278
+23:39:38 - INFO - randomforestregressor RMSE: 0.1849412910608481
+23:39:38 - INFO - gradientboostingregressor RMSE: 0.14268377901676804
+23:39:38 - INFO - svr RMSE: 0.18954497152674607
+23:39:38 - INFO - mlpregressor RMSE: 0.17579788640813013
+23:39:38 - INFO - Models trained successfully
+23:39:38 - INFO - dict_keys(['linearregression', 'lasso', 'ridge', 'decisiontreeregressor', 'randomforestregressor', 'gradientboostingregressor', 'svr', 'mlpregressor'])
